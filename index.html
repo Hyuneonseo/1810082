@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>👩‍💻</title>
+	<style>
+		body {background-color: #333333; text-decoration: none;}
+		p {color: white; font-size: 2em; text-decoration: none;}
+		a{text-decoration: none; color: black;}
+		a:hover {color: #FF00FF;}
+		#memo { width: 600px; height: 700px; position: absolute; top:250px; left: 900px;  text-decoration: none;  }
+		
+		#text {position: relative; width: 550px; top:30px; left: 20px; line-height: 1.8em; font-size: 1.1em; font-weight: bold; text-decoration:none; }
+
+		#titletext {position: relative; width: 550px; top:10px; left: 20px; line-height: 1.8em; font-size: 2em; font-weight: bold; text-decoration: none;}
+
+		#next{position: absolute; bottom: 20px; right: 20px; animation: bing 1s infinite;}
+		#next img{width: 60px;}
+		#roju{width: 400px; height: 230px; position: absolute; top: 270px; left: 400px; border-radius: 50%; overflow: hidden; transition: 0.7s;}
+		#roju img{width: 400px; height: 230px;}
+		#roju:hover{border-radius: 0%;}
+		#baby{position: absolute; top: 280px; left: 570px;}
+		#baby img{width: 200px; animation: bing 1s infinite;}
+
+		@keyframes bing{
+			from{transform: rotateZ(0deg);}
+			to{transform: rotateZ(360deg);}
+		}
+
+		@keyframes drop{
+			from{margin-top:-20px; margin-left: 800px;}
+			to{margin-top: -15px; margin-left: 805px;}
+		}
+
+		@keyframes third{
+			from{margin-top:200px; margin-left: 200px;}
+			to{margin-top: 205px; margin-left: 205px;}
+		}
+
+		@keyframes drops{
+			from{margin-top: 400px; margin-left: 400px;}
+			to{margin-top: 405px; margin-left: 405px;}
+		}
+
+
+		#second:hover{border-radius: 0%; width: 700px; height: 800px; color: black; font-size: 2em;}
+
+		#third:hover{border-radius: 0%; width: 700px; height: 800px; color: black; }
+	</style>
+</head>
+<body>
+	
+
+	<div id="memo">
+			<a href="what.html">
+				<div id="titletext">『🎭-'👱🏻와 👩🏼' 중 (👱🏻,👩🏼)』 《남녀대화》</div>
+			<div id="text">[👱🏻] (👩🏼의 🖐️을 붙들고) 천하디천한 이 🖐️으로 이 거룩한 ⛪을 💩히고 있는 것이라면, 그 죄의 🎁으로 내 👄이 낯을 ☺️ 두 순례자처럼 대기하고 섰다가 점잖게 💏하여 그 💩 흔적을 🚿 하오.<br>[👩🏼] 착한 순례자님, 그건 당신 🖐️에 너무나 🖕이 되어요. 당신 🖐️은 그처럼 점잖게 🙏을 보여주고 있잖아요. 성자의 🖐️은 순례자가 🖐️을 갖다 대자는 것이고, 🖐️과 🖐️을 맞대는 것이 거룩한 순례자의 💏가 아닌가요.<br>[👱🏻] 성자나 거룩한 순례자에게도 👄이 있잖소.<br>[👩🏼] 아이 순례자님, 그것은 🙏를 올리자는 👄이에요.<br>[👱🏻] 아, 그럼 성녀님, 🖐️으로 하는 💏를 👄로 하게 해주시오. 👄이 기원하니 허락해 주시오. 신앙이 절망으로 변하면 안 되니까요.<br>[👩🏼] 성자의 🖤은 동하지 않아요. 비록 🙏을 들어주는 일은 있더라도.<br>[👱🏻] 그럼, 동하지 말고 계시오. 내 🙏의 효험을 받으리라, 이렇게 당신의 👄로 내 👄의 죄는 🚿지는구료. (💋💏💋한다.)<br>[👩🏼] 그럼, 제 👄이 그 죄를 짊어지게요.<br>[👱🏻] 내 👄에서 죄를? 아, 얼마나 🍭 꾸짖음인가! 죄를 돌려주오. (💋💏💋한다.)<br>[👩🏼] 💏에도 이유를 붙이시네요. </div>
+			</a>
+			
+		
+	</div>
+	<div id="roju"><img src="roju.gif"></div>
+	<div id="baby"><img src="baby.png"></div>
+	<a href="what.html">
+		<div id="next"><img src="hand.png"></div>
+	</a>
+	
+	<script>
+		var total = 0;
+		for(var i=0;i<10;i++){
+
+			var j = document.getElementById("second");
+			var newttt = j.cloneNode(true);
+			newttt.style.left = Math.random()*100 + "px";
+			newttt.style.top = Math.random()*100 + "px";
+			newttt.style.animationDuration = Math.random()+"s";
+			//newttt.style.background = "rgb("+Math.random()*255+","+Math.random()*255+","+Math.random()*255+")";
+			
+			document.body.appendChild(newttt);
+			
+		}
+
+		var total = 0;
+		for(var i=0;i<10;i++){
+
+			var k = document.getElementById("third");
+			var newttt = k.cloneNode(true);
+			newttt.style.left = Math.random()*100 + "px";
+			newttt.style.top = Math.random()*100 + "px";
+			newttt.style.animationDuration = Math.random()+"s";
+			//newttt.style.background = "rgb("+Math.random()*255+","+Math.random()*255+","+Math.random()*255+")";
+			
+			document.body.appendChild(newttt);
+			
+		}
+	</script>	
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>👩‍💻</title>
+	<style>
+		p {color: white; font-size: 2em; text-decoration: none;}
+		body {background-color: #333333;}
+		#memo { width: 600px; height: 700px; position: absolute; top:340px; left: 150px; opacity: 0.5; border-radius: 50%; background-color: #8F00FF; }
+		#memo img{width: 600px; height: 700px; text-align: center; }
+		#text {position: relative; width: 400px; top:30px; left: 20px; line-height: 1.6em; font-size: 0.95em; font-weight: bold; color: white; background-color: black; overflow: hidden; transition-duration: 0.5s;}
+		#titletext {position: relative; width: 550px; top:10px; left: 20px; line-height: 1.8em; font-size: 1.5em; font-weight: bold; color: white;}
+		#roju{width: 1200px; height: 700px; margin: auto; margin-top: 20px; background-color: #FF00FF;}
+		#roju img{width: 1200px; height: 700px;}
+		#first{width: 190px; height: 10px; position: absolute; animation: drop 50s infinite; background-color: red;}
+		#second{width: 190px; height: 10px; position: absolute; animation: dropp 50s infinite; background-color: red;}
+		#third{width: 190px; height: 10px; position: absolute; animation: droppp 50s infinite; background-color: red;}
+		#fourth{width: 100px; height: 100px; position: absolute; top: 400px; left: 200px; font-weight: lighter; font-size:0.7em; line-height: 2.5em; overflow: hidden; border-radius: 50%; transition-duration: 0.5s; border: 1px solid white;
+			animation-name: dropppp; 
+			animation-duration: 0.1s;
+			animation-iteration-count: infinite; }
+		#fourth:hover{border-radius: 0%; width: 500px; height: 600px; color: black; font-size: 1.5em; background-color: red; border: 0px;}
+		#text:hover{border-radius: 50%; width: 200px; height: 200px;}
+
+		a{text-decoration: none;}
+		a:hover {color: #FF00FF;}
+
+		@keyframes drop{
+			from{margin-top:-100px; margin-left: 0px;}
+			to{margin-top: 305px; margin-left: 5px;}
+		}
+		@keyframes dropp{
+			from{margin-top:-100px; margin-left: 0px;}
+			to{margin-top: 305px; margin-left: 305px;}
+		}
+		@keyframes droppp{
+			from{transform: rotateZ(0deg);}
+			to{transform: rotateZ(360deg);}
+		}
+		@keyframes dropppp{
+			from{margin-top:-20px; margin-left: 800px;}
+			to{margin-top: -15px; margin-left: 805px;}
+		}
+	</style>
+</head>
+<body>
+	<div id="roju"><img src="roju.gif"></div>
+	<div id="fourth"><p>“이 이야기는 14세기 🇮🇹를 배경으로 👱🏻가 🎊💃🏻🕺🏻👯👯‍♂️🎊에 가서 👩🏼를 보고 💑에 빠져서 🏰에서 영원한 💕을 약속했다가 👩🏼의 사촌이 👱🏻의 친구를 🔪🔪🔪해서 🤑어쩌구 🤪저쩌구 하다가 둘다 💊을 먹구 ☠️다는 📖.” </p></div>
+	<div id="memo">
+		
+			<a href="index.html"><div id="titletext">『연극-'로미오와 줄리엣' 중 (로미로,줄리에트)』 《남녀대화》</div>
+			<div id="text">[로미오] (줄리에트의 손을 붙들고) 천하디천한 이 손으로 이 거룩한 성당을 더럽히고 있는 것이라면, 그 죄의 보상으로 내 입술이 낯을 붉힌 두 순례자처럼 대기하고 섰다가 점잖게 키스하여 그 추한 흔적을 씻고자 하오.<br>[줄리에트] 착한 순례자님, 그건 당신 손에 너무나 욕이 되어요. 당신 손은 그처럼 점잖게 신앙심을 보여주고 있잖아요. 성자의 손은 순례자가 손을 갖다 대자는 것이고, 손바닥과 손바닥을 맞대는 것이 거룩한 순례자의 키스가 아닌가요.<br>[로미오] 성자나 거룩한 순례자에게도 입술이 있잖소.<br>[줄리에트] 아이 순례자님, 그것은 기도를 올리자는 입술이에요.<br>[로미오] 아, 그럼 성녀님, 손으로 하는 키스를 입술로 하게 해주시오. 입술이 기원하니 허락해 주시오. 신앙이 절망으로 변하면 안 되니까요.<br>[줄리에트] 성자의 마음은 동하지 않아요. 비록 기원을 들어주는 일은 있더라도.<br>[로미오] 그럼, 동하지 말고 계시오. 내 기원의 효험을 받으리라, 이렇게 당신의 입술로 내 입술의 죄는 씻어지는구료. (키스한다.)<br>[줄리에트] 그럼, 제 입술이 그 죄를 짊어지게요.<br>[로미오] 내 입술에서 죄를? 아, 얼마나 달콤한 꾸짖음인가! 죄를 돌려주오. (키스한다.)<br>[줄리에트] 키스에도 이유를 붙이시네요. </div></a>
+		
+	</div>
+	<div id="first"><p>👱🏻💔👩🏼</p></div>
+	<div id="second"><p>🔪</p></div>
+	<div id="third"><p>☠️</p></div>
+	<script>
+		var total = 0;
+		for(var i=0;i<10;i++){
+
+			var j = document.getElementById("first");
+			var newttt = j.cloneNode(true);
+			newttt.style.left = Math.random()*window.innerWidth + "px";
+			newttt.style.top = Math.random()*window.innerHeight + "px";
+			newttt.style.animationDuration = Math.random()*100+"s";
+			//newttt.style.background = "rgb("+Math.random()*255+","+Math.random()*255+","+Math.random()*255+")";
+			
+			document.body.appendChild(newttt);
+			
+		}
+		var total = 0;
+		for(var i=0;i<10;i++){
+
+			var k = document.getElementById("second");
+			var newttt = k.cloneNode(true);
+			newttt.style.left = Math.random()*window.innerWidth + "px";
+			newttt.style.top = Math.random()*window.innerHeight + "px";
+			newttt.style.animationDuration = Math.random()*50+"s";
+			//newttt.style.background = "rgb("+Math.random()*255+","+Math.random()*255+","+Math.random()*255+")";
+			
+			document.body.appendChild(newttt);
+			
+		}
+		var total = 0;
+		for(var i=0;i<10;i++){
+
+			var s = document.getElementById("third");
+			var newttt = s.cloneNode(true);
+			newttt.style.left = Math.random()*window.innerWidth + "px";
+			newttt.style.top = Math.random()*window.innerHeight + "px";
+			newttt.style.animationDuration = Math.random()*50+"s";
+			//newttt.style.background = "rgb("+Math.random()*255+","+Math.random()*255+","+Math.random()*255+")";
+			
+			document.body.appendChild(newttt);
+			
+		}
+		
+	</script>	
+</body>
+</html>
